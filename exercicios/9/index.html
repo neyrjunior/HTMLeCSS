@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        table {
+         border-collapse: collapse;
+         width: 500px;
+        }
+        thead {
+            background-color: rgb(88, 88, 88);
+
+        }
+        tbody {
+            background-color: white;
+            color: black;
+        }
+        tfoot {
+            background-color: gray;
+        }
+        th,td {
+            padding: 10px;
+            border: 1px solid black;
+            font-weight: bolder;
+        }
+     
+        
+        td.num {
+            text-align: right;
+        }
+        th.total {
+            height: 35px;
+            font-weight: bold;
+        }
+        caption {
+            background-color: gray;
+            color: black;
+            height: 50px;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Tabelas</h1>
+    <table>
+        <caption>3 maiores populações do Brasil</caption>
+        <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 024 937</td>
+            </tr>
+            <tr>
+                <td class="">Minas Gerais</td>
+                <td class="num">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 615 526</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de pessoas</th>
+                <th class="total"><strong>84.173.123</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
